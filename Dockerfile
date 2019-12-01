@@ -8,11 +8,15 @@ LABEL sh.demyx.registry https://hub.docker.com/u/demyx
 
 # Remove all binaries
 RUN set -ex; \
-	mv /usr/local/sbin/haproxy /usr/local/bin; \
+	mv /usr/local/sbin/haproxy /; \
+	rm -rf /usr/local/bin; \
 	rm -rf /usr/local/sbin; \
 	rm -rf /usr/sbin; \
 	rm -rf /usr/bin; \
 	rm -rf /sbin; \
 	rm -rf /bin
 
-ENTRYPOINT ["haproxy", "-W", "-db", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
+# Set PATH to null
+ENV PATH=
+
+ENTRYPOINT ["/haproxy", "-W", "-db", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
