@@ -11,7 +11,7 @@ Docker image running Alpine Linux and modified version of Tecnativa/docker-socke
 DEMYX | DOCKER-SOCKET-PROXY
 --- | ---
 USER | root
-ENTRYPOINT | ["haproxy", "-W", "-db", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
+ENTRYPOINT | ["/haproxy", "-W", "-db", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
 PORT | 2375
 
 ## Updates & Support
