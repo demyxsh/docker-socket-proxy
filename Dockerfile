@@ -1,4 +1,4 @@
-FROM tecnativa/docker-socket-proxy 
+FROM tecnativa/docker-socket-proxy
 
 LABEL sh.demyx.image demyx/docker-socket-proxy
 LABEL sh.demyx.maintainer Demyx <info@demyx.sh>
