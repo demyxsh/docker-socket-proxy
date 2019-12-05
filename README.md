@@ -6,12 +6,12 @@
 [![HAProxy](https://img.shields.io/badge/haproxy-1.9.10-informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
 [![Buy Me A Coffee](https://img.shields.io/badge/buy_me_coffee-$5-informational?style=flat&color=blue)](https://www.buymeacoffee.com/VXqkQK5tb)
 
-Docker image running Alpine Linux and modified version of Tecnativa/docker-socket-proxy. This image has been stripped of all binaries except haproxy to further lock down the container.
+Docker image running Alpine Linux and modified version of [Tecnativa/docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy).
 
 DEMYX | DOCKER-SOCKET-PROXY
 --- | ---
 USER | root
-ENTRYPOINT | ["/haproxy", "-W", "-db", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
+ENTRYPOINT | ["haproxy", "-W", "-db", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
 PORT | 2375
 
 ## Updates & Support
