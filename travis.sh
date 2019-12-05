@@ -7,7 +7,7 @@ IFS=$'\n\t'
 
 # Get versions 
 DEMYX_ALPINE_VERSION="$(docker run --rm --name="$DEMYX_REPOSITORY" --entrypoint=cat demyx/"$DEMYX_REPOSITORY" /etc/os-release | grep VERSION_ID | cut -c 12- | sed -e 's/\r//g')"
-DEMYX_HAPROXY_VERSION="$(docker run --rm --entrypoint=/haproxy demyx/docker-socket-proxy -v | awk '{print $3}' | sed -e 's/\r//g')"
+DEMYX_HAPROXY_VERSION="$(docker run --rm --entrypoint=haproxy demyx/"$DEMYX_REPOSITORY" -v | awk '{print $3}' | sed -e 's/\r//g')"
 
 # Replace versions
 sed -i "s|alpine-.*.-informational|alpine-${DEMYX_ALPINE_VERSION}-informational|g" README.md
