@@ -5,9 +5,9 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-# Get versions
-DEMYX_ALPINE_VERSION="$(docker exec -t docker-socket-proxy cat /etc/os-release | grep VERSION_ID | cut -c 12- | sed -e 's/\r//g')"
-DEMYX_HAPROXY_VERSION="$(docker exec -t docker-socket-proxy haproxy -v | awk '{print $3}' | sed -e 's/\r//g')"
+# Get versions 
+DEMYX_ALPINE_VERSION="$(docker run --rm --name="$DEMYX_REPOSITORY" --entrypoint=cat demyx/"$DEMYX_REPOSITORY" /etc/os-release | grep VERSION_ID | cut -c 12- | sed -e 's/\r//g')"
+DEMYX_HAPROXY_VERSION="$(docker run --rm --entrypoint=/haproxy demyx/docker-socket-proxy -v | awk '{print $3}' | sed -e 's/\r//g')"
 
 # Replace versions
 sed -i "s|alpine-.*.-informational|alpine-${DEMYX_ALPINE_VERSION}-informational|g" README.md

@@ -17,8 +17,7 @@ before_install:
 
 script:
   - docker build --no-cache -t demyx/"$DEMYX_REPOSITORY" .
-  - docker run -d --rm --name=docker-socket-proxy tecnativa/docker-socket-proxy
-  - docker exec -t docker-socket-proxy tecnativa/docker-socket-proxy haproxy -v
+  - docker run --rm --entrypoint=/haproxy demyx/docker-socket-proxy -v
 
 after_success:
   - echo "$DEMYX_PASSWORD" | docker login -u "$DEMYX_USERNAME" --password-stdin
