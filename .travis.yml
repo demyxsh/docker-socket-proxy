@@ -17,7 +17,8 @@ before_install:
 
 script:
   - docker build --no-cache -t demyx/"$DEMYX_REPOSITORY" .
-  - docker run --rm --entrypoint=haproxy demyx/"$DEMYX_REPOSITORY" -v
+  - docker run -dit --name="$DEMYX_REPOSITORY" --entrypoint=sh demyx/"$DEMYX_REPOSITORY"
+  - docker exec "$DEMYX_REPOSITORY" haproxy -v
 
 after_success:
   - echo "$DEMYX_PASSWORD" | docker login -u "$DEMYX_USERNAME" --password-stdin
