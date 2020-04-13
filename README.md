@@ -15,12 +15,7 @@ USER | demyx
 ENTRYPOINT | ["sudo", "demyx-entrypoint"]
 PORT | 2375
 
-## Updates & Support
-[![Code Size](https://img.shields.io/github/languages/code-size/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
-[![Repository Size](https://img.shields.io/github/repo-size/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
-[![Watches](https://img.shields.io/github/watchers/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
-[![Stars](https://img.shields.io/github/stars/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
-[![Forks](https://img.shields.io/github/forks/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
+## Usage
 
 * Auto built weekly on Sundays (America/Los_Angeles)
 * Rolling release updates
@@ -73,3 +68,14 @@ The same will happen to any containers that use this proxy's 2375 port to access
 ```
 
 For more details: [Tecnativa/docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy)
+
+## Updates & Support
+[![Code Size](https://img.shields.io/github/languages/code-size/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
+[![Repository Size](https://img.shields.io/github/repo-size/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
+[![Watches](https://img.shields.io/github/watchers/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
+[![Stars](https://img.shields.io/github/stars/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
+[![Forks](https://img.shields.io/github/forks/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
+
+* Auto built weekly on Sundays (America/Los_Angeles)
+* Rolling release updates
+* For support: [#demyx](https://webchat.freenode.net/?channel=#demyx)
