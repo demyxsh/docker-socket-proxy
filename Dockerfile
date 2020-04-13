@@ -58,4 +58,4 @@ RUN set -ex; \
 
 USER demyx
 
-ENTRYPOINT ["haproxy", "-W", "-db", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
+ENTRYPOINT ["sudo", "demyx-entrypoint"]
