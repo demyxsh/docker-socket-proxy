@@ -13,6 +13,10 @@ DEMYX_HAPROXY_VERSION="$(docker exec "$DEMYX_REPOSITORY" haproxy -v | awk '{prin
 sed -i "s|alpine-.*.-informational|alpine-${DEMYX_ALPINE_VERSION}-informational|g" README.md
 sed -i "s|haproxy-.*.-informational|haproxy-${DEMYX_HAPROXY_VERSION}-informational|g" README.md
 
+# Echo versions to file
+echo "DEMYX_ALPINE_VERSION=$DEMYX_ALPINE_VERSION
+DEMYX_HAPROXY_VERSION=$DEMYX_HAPROXY_VERSION" > VERSION
+
 # Push back to GitHub
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis CI"
