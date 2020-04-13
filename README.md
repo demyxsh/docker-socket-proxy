@@ -19,7 +19,6 @@ PORT | 2375
 
 *Notice: this example only shows you what would happen without passing any permissions via environment variables. To see all available permissions, please click the link below at the end of the examples.*
 
-## Usage
 Run the API proxy (--privileged flag is required here because it connects with the docker socket, which is a privileged connection in some SELinux/AppArmor contexts and would get locked otherwise):
 ```
 $ docker run \
