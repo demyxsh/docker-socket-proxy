@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2020-04-14
+### Added
+- Lockdown busybox binary
+### Changed
+- Move install packages command to its own RUN command
+- Move configure sudo commands to its own RUN command
+
 ## 2020-04-13
 ### Added
 - demyx user:group and directories
@@ -16,4 +23,3 @@
     - Update version commands
     - Output versions to a file
     - Commit version file first before committing the rest
-### Removed

@@ -50,7 +50,12 @@ RUN set -ex; \
 	echo 'Defaults env_keep +="SYSTEM"' >> /etc/sudoers.d/demyx; \
 	echo 'Defaults env_keep +="TASKS"' >> /etc/sudoers.d/demyx; \
 	echo 'Defaults env_keep +="VERSION"' >> /etc/sudoers.d/demyx; \
-	echo 'Defaults env_keep +="VOLUMES"' >> /etc/sudoers.d/demyx; \
+	echo 'Defaults env_keep +="VOLUMES"' >> /etc/sudoers.d/demyx
+
+# Finalize
+RUN set -ex; \
+	# Lockdown
+	chmod o-x /bin/busybox; \
 	\
 	# Create entrypoint
 	echo "#!/usr/bin/dumb-init /bin/sh" > /usr/local/bin/demyx-entrypoint; \
