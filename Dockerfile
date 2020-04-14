@@ -21,10 +21,12 @@ RUN set -ex; \
     install -d -m 0755 -o demyx -g demyx "$DOCKER_SOCKET_PROXY_CONFIG"; \
     install -d -m 0755 -o demyx -g demyx "$DOCKER_SOCKET_PROXY_LOG"
 
-# Finalize
+# Main packages
 RUN set -ex; \
-	apk --no-cache add dumb-init sudo; \
-	# Configure sudo
+	apk --no-cache add dumb-init sudo
+
+# Configure sudo
+RUN set -ex; \
 	echo "demyx ALL=(ALL) NOPASSWD: /usr/local/bin/demyx-entrypoint" > /etc/sudoers.d/demyx; \
 	echo 'Defaults env_keep +="AUTH"' >> /etc/sudoers.d/demyx; \
 	echo 'Defaults env_keep +="BUILD"' >> /etc/sudoers.d/demyx; \
