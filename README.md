@@ -73,6 +73,6 @@ For more details: [Tecnativa/docker-socket-proxy](https://github.com/Tecnativa/d
 [![Stars](https://img.shields.io/github/stars/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
 [![Forks](https://img.shields.io/github/forks/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
 
-* Auto built weekly on Sundays (America/Los_Angeles)
+* Auto built weekly on Saturdays (America/Los_Angeles)
 * Rolling release updates
 * For support: [#demyx](https://webchat.freenode.net/?channel=#demyx)
