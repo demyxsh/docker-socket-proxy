@@ -12,8 +12,8 @@ Docker image running Alpine Linux and modified version of [Tecnativa/docker-sock
 DEMYX | DOCKER-SOCKET-PROXY
 --- | ---
 USER | demyx
-ENTRYPOINT | ["sudo", "demyx-entrypoint"]
 PORT | 2375
+ENTRYPOINT | /usr/bin/sudo -E /usr/local/bin/demyx-entrypoint
 
 ## Usage
 
