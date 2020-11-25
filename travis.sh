@@ -3,7 +3,7 @@
 # https://demyx.sh
 
 # Get versions 
-DEMYX_DOCKER_SOCKET_PROXY_ALPINE_VERSION="$(/usr/bin/docker exec --user=root "$DEMYX_REPOSITORY" /bin/cat /etc/os-release | /bin/grep VERSION_ID | /usr/bin/cut -c 12- | /bin//bin/sed 's/\r//g')"
+DEMYX_DOCKER_SOCKET_PROXY_ALPINE_VERSION="$(/usr/bin/docker exec --user=root "$DEMYX_REPOSITORY" /bin/cat /etc/os-release | /bin/grep VERSION_ID | /usr/bin/cut -c 12- | /bin/sed 's/\r//g')"
 DEMYX_DOCKER_SOCKET_PROXY_HAPROXY_VERSION="$(/usr/bin/docker exec "$DEMYX_REPOSITORY" /usr/local/sbin/haproxy -v | /usr/bin/awk '{print $3}' | /bin/sed 's/\r//g')"
 
 # Replace versions
