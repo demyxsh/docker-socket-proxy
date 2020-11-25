@@ -2,7 +2,7 @@
 [![Build Status](https://img.shields.io/travis/demyxco/docker-socket-proxy?style=flat)](https://travis-ci.org/demyxco/docker-socket-proxy)
 [![Docker Pulls](https://img.shields.io/docker/pulls/demyx/docker-socket-proxy?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
 [![Architecture](https://img.shields.io/badge/linux-amd64-important?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
-[![Alpine](https://img.shields.io/badge/alpine-3.11.3-informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
+[![Alpine](https://img.shields.io/badge/alpine--informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
 [![HAProxy](https://img.shields.io/badge/haproxy-1.9.13-informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
 [![Buy Me A Coffee](https://img.shields.io/badge/buy_me_coffee-$5-informational?style=flat&color=blue)](https://www.buymeacoffee.com/VXqkQK5tb)
 [![Become a Patron!](https://img.shields.io/badge/become%20a%20patron-$5-informational?style=flat&color=blue)](https://www.patreon.com/bePatron?u=23406156)
