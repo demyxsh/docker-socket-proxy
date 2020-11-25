@@ -17,7 +17,7 @@ DEMYX_DOCKER_SOCKET_PROXY_HAPROXY_VERSION=$DEMYX_DOCKER_SOCKET_PROXY_HAPROXY_VER
 # Push back to GitHub
 /usr/bin/git config --global user.email "travis@travis-ci.com"
 /usr/bin/git config --global user.name "Travis CI"
-/usr/bin/git remote set-url origin https://${DEMYX_GITHUB_TOKEN}@github.com/demyxco/"$DEMYX_REPOSITORY".git
+/usr/bin/git remote set-url origin https://"$DEMYX_GITHUB_TOKEN"@github.com/demyxco/"$DEMYX_REPOSITORY".git
 # Commit VERSION first
 /usr/bin/git add VERSION
 /usr/bin/git commit -m "ALPINE $DEMYX_DOCKER_SOCKET_PROXY_ALPINE_VERSION, HAPROXY $DEMYX_DOCKER_SOCKET_PROXY_HAPROXY_VERSION"
