@@ -13,14 +13,14 @@ env:
   - DEMYX_USERNAME=demyx DEMYX_REPOSITORY=docker-socket-proxy
 
 before_install:
-  - docker pull tecnativa/docker-socket-proxy
+  - /usr/bin/docker pull tecnativa/docker-socket-proxy
 
 script:
-  - docker build --no-cache -t demyx/"$DEMYX_REPOSITORY" .
-  - docker run -dit --name="$DEMYX_REPOSITORY" demyx/"$DEMYX_REPOSITORY"
-  - docker exec "$DEMYX_REPOSITORY" haproxy -v
+  - /usr/bin/docker build --no-cache -t demyx/"$DEMYX_REPOSITORY" .
+  - /usr/bin/docker run -dit --name="$DEMYX_REPOSITORY" demyx/"$DEMYX_REPOSITORY"
+  - /usr/bin/docker exec "$DEMYX_REPOSITORY" /usr/local/sbin/haproxy -v
 
 after_success:
-  - echo "$DEMYX_PASSWORD" | docker login -u "$DEMYX_USERNAME" --password-stdin
-  - docker push demyx/"$DEMYX_REPOSITORY"
-  - bash travis.sh
+  - /bin/echo "$DEMYX_PASSWORD" | /usr/bin/docker login -u "$DEMYX_USERNAME" --password-stdin
+  - /usr/bin/docker push demyx/"$DEMYX_REPOSITORY"
+  - /bin/bash travis.sh
