@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2021-02-22
+- Added
+- Changed
+    - Remove full paths to binaries.
+    - Rearrange RUN commands.
+    - Update bash PS1.
+- Removed
+
 ## 2020-11-22
 ### Changed
 - Rename variables and support old ones
