@@ -13,7 +13,7 @@ DEMYX | DOCKER-SOCKET-PROXY
 --- | ---
 USER | demyx
 PORT | 2375
-ENTRYPOINT | /usr/bin/sudo -E /usr/local/bin/demyx-entrypoint
+ENTRYPOINT | sudo -E demyx-entrypoint
 
 ## Usage
 
