@@ -38,8 +38,8 @@ jobs:
           fi
       - name: Version
         run: |
-          DEMYX_DOCKER_SOCKET_PROXY_ALPINE_VERSION="$(docker exec ${{ env.DEMYX_REPOSITORY }} cat /etc/os-release | grep VERSION_ID | cut -c 12-)"
-          DEMYX_DOCKER_SOCKET_PROXY_HAPROXY_VERSION="$(docker exec ${{ env.DEMYX_REPOSITORY }} haproxy -v | grep HA-Proxy | awk '{print $3}')"
+          DEMYX_DOCKER_SOCKET_PROXY_ALPINE_VERSION="$(docker exec --user=root ${{ env.DEMYX_REPOSITORY }} cat /etc/os-release | grep VERSION_ID | cut -c 12-)"
+          DEMYX_DOCKER_SOCKET_PROXY_HAPROXY_VERSION="$(docker exec --user=root ${{ env.DEMYX_REPOSITORY }} haproxy -v | grep HA-Proxy | awk '{print $3}')"
           DEMYX_JQ="$(jq ".alpine = \"$DEMYX_DOCKER_SOCKET_PROXY_ALPINE_VERSION\" | .docker_socket_proxy = \"$DEMYX_DOCKER_SOCKET_PROXY_HAPROXY_VERSION\"" version.json)"
 
           # Update versions
