@@ -3,7 +3,7 @@ FROM tecnativa/docker-socket-proxy
 LABEL sh.demyx.image 				demyx/docker-socket-proxy
 LABEL sh.demyx.maintainer 			Demyx <info@demyx.sh>
 LABEL sh.demyx.url 					https://demyx.sh
-LABEL sh.demyx.github 				https://github.com/demyxco
+LABEL sh.demyx.github 				https://github.com/demyxsh
 LABEL sh.demyx.registry 			https://hub.docker.com/u/demyx
 
 # Set default variables

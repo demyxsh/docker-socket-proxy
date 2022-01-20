@@ -1,9 +1,14 @@
 # docker-socket-proxy
-[![Build Status](https://img.shields.io/travis/demyxco/docker-socket-proxy?style=flat)](https://travis-ci.org/demyxco/docker-socket-proxy)
+[![demyxsh/docker-socket-proxy](https://github.com/demyxsh/docker-socket-proxy/actions/workflows/main.yml/badge.svg)](https://github.com/demyxsh/docker-socket-proxy/actions/workflows/main.yml)
+[![Code Size](https://img.shields.io/github/languages/code-size/demyxsh/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxsh/docker-socket-proxy)
+[![Repository Size](https://img.shields.io/github/repo-size/demyxsh/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxsh/docker-socket-proxy)
+[![Watches](https://img.shields.io/github/watchers/demyxsh/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxsh/docker-socket-proxy)
+[![Stars](https://img.shields.io/github/stars/demyxsh/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxsh/docker-socket-proxy)
+[![Forks](https://img.shields.io/github/forks/demyxsh/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxsh/docker-socket-proxy)
 [![Docker Pulls](https://img.shields.io/docker/pulls/demyx/docker-socket-proxy?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
 [![Architecture](https://img.shields.io/badge/linux-amd64-important?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
-[![Alpine](https://img.shields.io/badge/alpine--informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
-[![HAProxy](https://img.shields.io/badge/haproxy-1.9.16-informational?style=flat&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
+[![Alpine](https://img.shields.io/badge/dynamic/json?url=https://github.com/demyxsh/docker-socket-proxy/raw/master/version.json&label=alpine&query=$.alpine&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
+[![HAProxy](https://img.shields.io/badge/dynamic/json?url=https://github.com/demyxsh/docker-socket-proxy/raw/master/version.json&label=alpine&query=$.docker_socket_proxy&color=blue)](https://hub.docker.com/r/demyx/docker-socket-proxy)
 [![Buy Me A Coffee](https://img.shields.io/badge/buy_me_coffee-$5-informational?style=flat&color=blue)](https://www.buymeacoffee.com/VXqkQK5tb)
 [![Become a Patron!](https://img.shields.io/badge/become%20a%20patron-$5-informational?style=flat&color=blue)](https://www.patreon.com/bePatron?u=23406156)
 
@@ -14,6 +19,12 @@ DEMYX | DOCKER-SOCKET-PROXY
 USER | demyx
 PORT | 2375
 ENTRYPOINT | sudo -E demyx-entrypoint
+
+## NOTICE
+This repository has been moved to the organization [demyxsh](https://github.com/demyxsh); please update the remote URL.
+```
+git remote set-url origin git@github.com:demyxsh/docker-socket-proxy.git
+```
 
 ## Usage
 
@@ -67,12 +78,6 @@ The same will happen to any containers that use this proxy's 2375 port to access
 For more details: [Tecnativa/docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy)
 
 ## Updates & Support
-[![Code Size](https://img.shields.io/github/languages/code-size/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
-[![Repository Size](https://img.shields.io/github/repo-size/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
-[![Watches](https://img.shields.io/github/watchers/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
-[![Stars](https://img.shields.io/github/stars/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
-[![Forks](https://img.shields.io/github/forks/demyxco/docker-socket-proxy?style=flat&color=blue)](https://github.com/demyxco/docker-socket-proxy)
-
 * Auto built weekly on Saturdays (America/Los_Angeles)
 * Rolling release updates
-* For support: [#demyx](https://webchat.freenode.net/?channel=#demyx)
+* For support: [#demyx](https://web.libera.chat/?channel=#demyx)
