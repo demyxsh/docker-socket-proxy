@@ -14,6 +14,18 @@
 
 Docker image running Alpine Linux and modified version of [Tecnativa/docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy).
 
+To properly utilize this image, please use [Demyx](https://demyx.sh/readme).
+- Repository - [demyxsh/demyx](https://github.com/demyxsh/demyx)
+- Homepage - [demyx.sh](https://demyx.sh)
+
+[![Demyx Discord](https://discordapp.com/api/guilds/1152828583446859818/widget.png?style=banner2)](https://demyx.sh/discord)
+
+Join us on Discord for latest news, faster support, or just chill.
+
+<a href="https://demyx.sh/sponsor-buymeacoffee" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+Support this project by buying coffee (please).
+
 DEMYX | DOCKER-SOCKET-PROXY
 --- | ---
 USER | demyx
@@ -78,6 +90,6 @@ The same will happen to any containers that use this proxy's 2375 port to access
 For more details: [Tecnativa/docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy)
 
 ## Updates & Support
-* Auto built weekly on Saturdays (America/Los_Angeles)
-* Rolling release updates
-* For support: [#demyx](https://web.libera.chat/?channel=#demyx)
+- Auto built weekly on Saturdays (America/Los_Angeles)
+- Rolling release updates
+- For support: [Discord](https://demyx.sh/discord)
