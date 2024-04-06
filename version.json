@@ -1,4 +1,4 @@
 {
-  "alpine": "3.12.0",
-  "docker_socket_proxy": "1.9.16"
+  "alpine": "3.16.9",
+  "docker_socket_proxy": "2.2.32-4081d5a"
 }
