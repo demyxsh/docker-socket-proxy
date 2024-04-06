@@ -28,7 +28,7 @@ jobs:
         id: test
         shell: 'script -q -e -c "bash {0}"'
         run: |
-          docker run -d --name=${{ env.DEMYX_REPOSITORY }} demyx/${{ env.DEMYX_REPOSITORY }}
+          docker run -d --name=${{ env.DEMYX_REPOSITORY }} --entrypoint=top demyx/${{ env.DEMYX_REPOSITORY }}
 
           DEMYX_TEST="$(docker exec ${{ env.DEMYX_REPOSITORY }} haproxy -v 2>&1)"
           if [[ "$DEMYX_TEST" == *"HA-Proxy version"* ]]; then
