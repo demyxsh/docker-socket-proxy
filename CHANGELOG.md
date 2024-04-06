@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2024-04-06
+- Override entrypoint to keep the container running [0c6d56c](https://github.com/demyxsh/docker-socket-proxy/commit/0c6d56cea39af96abfbde0b22388f78103a8149e)
+
 ## 2021-02-22
 - Added
 - Changed
