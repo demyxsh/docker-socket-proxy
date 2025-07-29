@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2025-07-28
+- Update commit message format in GitHub Actions to include run ID instead of random quote [7f4dec7](https://github.com/demyxsh/docker-socket-proxy/commit/7f4dec7d09b82996a3484828d661b1e64facf66f)
+
 ## 2024-04-06
 - Generate haproxy config first [949da29](https://github.com/demyxsh/docker-socket-proxy/commit/949da298c9144cc339bce91a1685b63042729e57)
 - Override entrypoint to keep the container running [0c6d56c](https://github.com/demyxsh/docker-socket-proxy/commit/0c6d56cea39af96abfbde0b22388f78103a8149e)
