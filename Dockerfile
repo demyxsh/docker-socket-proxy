@@ -43,7 +43,7 @@ RUN set -ex; \
 RUN set -ex; \
 	\
 	# Create entrypoint
-    ./docker-entrypoint.sh \
+    /usr/local/bin/docker-entrypoint.sh \
 	echo "#!/bin/bash" > /usr/local/bin/demyx-entrypoint; \
 	echo "haproxy -W -db -f /usr/local/etc/haproxy/haproxy.cfg" >> /usr/local/bin/demyx-entrypoint; \
 	\
