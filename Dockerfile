@@ -41,15 +41,16 @@ RUN set -ex; \
 
 # Finalize
 RUN set -ex; \
-	# Lockdown
-	chmod o-x /bin/busybox; \
 	\
 	# Create entrypoint
     ./docker-entrypoint.sh \
 	echo "#!/bin/bash" > /usr/local/bin/demyx-entrypoint; \
 	echo "haproxy -W -db -f /usr/local/etc/haproxy/haproxy.cfg" >> /usr/local/bin/demyx-entrypoint; \
 	\
-	chmod +x /usr/local/bin/demyx-entrypoint
+	chmod +x /usr/local/bin/demyx-entrypoint; \
+    \
+    # Lockdown
+	chmod o-x /bin/busybox
 
 USER demyx
 
