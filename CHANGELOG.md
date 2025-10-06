@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2025-10-05
+- Lockdown the binary at the end [f9bf539](https://github.com/demyxsh/docker-socket-proxy/commit/f9bf53921117e7c49cef873e7db9f22056374b25)
+
 ## 2025-07-28
 - Update commit message format in GitHub Actions to include run ID instead of random quote [7f4dec7](https://github.com/demyxsh/docker-socket-proxy/commit/7f4dec7d09b82996a3484828d661b1e64facf66f)
 
