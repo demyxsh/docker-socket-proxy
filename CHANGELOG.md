@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2025-10-21
+- fix: update test conditional [eb8e7cc](https://github.com/demyxsh/docker-socket-proxy/commit/eb8e7cc0fc52f34f5069c4ff56a8e355e7457bf3)
+
 ## 2025-10-05
 - Lockdown the binary at the end [f9bf539](https://github.com/demyxsh/docker-socket-proxy/commit/f9bf53921117e7c49cef873e7db9f22056374b25)
 
