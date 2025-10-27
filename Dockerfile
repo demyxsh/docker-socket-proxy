@@ -44,6 +44,8 @@ RUN set -ex; \
 	\
 	# Create entrypoint
     /usr/local/bin/docker-entrypoint.sh \
+    cp /usr/local/etc/haproxy/haproxy.cfg.template /usr/local/etc/haproxy/haproxy.cfg; \
+    sed -i "s/\${BIND_CONFIG}/:2375/g" /usr/local/etc/haproxy/haproxy.cfg; \
 	echo "#!/bin/bash" > /usr/local/bin/demyx-entrypoint; \
 	echo "haproxy -W -db -f /usr/local/etc/haproxy/haproxy.cfg" >> /usr/local/bin/demyx-entrypoint; \
 	\
