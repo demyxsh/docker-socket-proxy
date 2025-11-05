@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2025-10-27
+- fix: upstream changes [3b68471](https://github.com/demyxsh/docker-socket-proxy/commit/3b68471f4eeac7bdda9aa5319bb8a514eda7749e)
+
 ## 2025-10-21
 - fix: update test conditional [eb8e7cc](https://github.com/demyxsh/docker-socket-proxy/commit/eb8e7cc0fc52f34f5069c4ff56a8e355e7457bf3)
 
