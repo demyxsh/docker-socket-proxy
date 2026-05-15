@@ -1,55 +1,149 @@
-# CHANGELOG
+# Changelog
+
+## 2026-05-15
+### Added
+- None.
+### Changed
+- Scheduled build run.
+### Fixed
+- None.
+### Removed
+- None.
+### Security
+- None.
+
+## 2026-05-14
+### Added
+- None.
+### Changed
+- None.
+### Fixed
+- Improved HAProxy version extraction using a regex pattern.
+### Removed
+- None.
+### Security
+- None.
 
 ## 2025-10-27
-- fix: upstream changes [3b68471](https://github.com/demyxsh/docker-socket-proxy/commit/3b68471f4eeac7bdda9aa5319bb8a514eda7749e)
+### Added
+- None.
+### Changed
+- None.
+### Fixed
+- Upstream changes.
+### Removed
+- None.
+### Security
+- None.
 
 ## 2025-10-21
-- fix: update test conditional [eb8e7cc](https://github.com/demyxsh/docker-socket-proxy/commit/eb8e7cc0fc52f34f5069c4ff56a8e355e7457bf3)
+### Added
+- None.
+### Changed
+- None.
+### Fixed
+- Updated test conditional.
+### Removed
+- None.
+### Security
+- None.
 
 ## 2025-10-05
-- Lockdown the binary at the end [f9bf539](https://github.com/demyxsh/docker-socket-proxy/commit/f9bf53921117e7c49cef873e7db9f22056374b25)
+### Added
+- Added full binary path usage.
+### Changed
+- Locked down the binary at the end of the build flow.
+### Fixed
+- None.
+### Removed
+- None.
+### Security
+- None.
 
 ## 2025-07-28
-- Update commit message format in GitHub Actions to include run ID instead of random quote [7f4dec7](https://github.com/demyxsh/docker-socket-proxy/commit/7f4dec7d09b82996a3484828d661b1e64facf66f)
+### Added
+- None.
+### Changed
+- Updated GitHub Actions commit message format to include run ID.
+### Fixed
+- None.
+### Removed
+- None.
+### Security
+- None.
 
 ## 2024-04-06
-- Generate haproxy config first [949da29](https://github.com/demyxsh/docker-socket-proxy/commit/949da298c9144cc339bce91a1685b63042729e57)
-- Override entrypoint to keep the container running [0c6d56c](https://github.com/demyxsh/docker-socket-proxy/commit/0c6d56cea39af96abfbde0b22388f78103a8149e)
+### Added
+- None.
+### Changed
+- Generated HAProxy config before related runtime steps.
+- Overrode entrypoint to keep the container running.
+### Fixed
+- None.
+### Removed
+- None.
+### Security
+- None.
 
 ## 2021-02-22
-- Added
-- Changed
-    - Remove full paths to binaries.
-    - Rearrange RUN commands.
-    - Update bash PS1.
-- Removed
+### Added
+- None.
+### Changed
+- Removed full paths to binaries.
+- Rearranged `RUN` commands.
+- Updated bash `PS1`.
+### Fixed
+- None.
+### Removed
+- None.
+### Security
+- None.
 
 ## 2020-11-22
+### Added
+- None.
 ### Changed
-- Rename variables and support old ones
-- Use full paths to binaries/scripts
-- Use -E flag for sudo to keep environment variables
+- Renamed variables and added support for old variable names.
+- Used full paths to binaries and scripts.
+- Used `sudo -E` to keep environment variables.
+### Fixed
+- None.
+### Removed
+- None.
+### Security
+- None.
 
 ## 2020-04-14
 ### Added
-- Lockdown busybox binary
+- Lockdown busybox binary.
 ### Changed
-- Move install packages command to its own RUN command
-- Move configure sudo commands to its own RUN command
+- Moved package install command to its own `RUN` command.
+- Moved `sudo` configuration commands to their own `RUN` command.
+### Fixed
+- None.
+### Removed
+- None.
+### Security
+- None.
 
 ## 2020-04-13
 ### Added
-- demyx user:group and directories
-- sudo
+- Added `demyx` user/group and directories.
+- Added `sudo`.
 ### Changed
-- Format LABEL and ENV entries
-- Set demyx as the container user
-- Entrypoint now uses sudo
-- Move Updates & Support section to the bottom
-- Add notice in Usage section
-- Travis-CI
-    - Update script commands
-    - Run container in the background
-    - Update version commands
-    - Output versions to a file
-    - Commit version file first before committing the rest
+- Formatted `LABEL` and `ENV` entries.
+- Set `demyx` as the container user.
+- Updated entrypoint to use `sudo`.
+- Moved Updates & Support section to the bottom.
+- Added Usage section notice.
+- Updated Travis CI script commands.
+- Ran container in the background during CI.
+- Updated version commands.
+- Output versions to a file.
+- Committed version file before other files.
+### Fixed
+- None.
+### Removed
+- None.
+### Security
+- None.
